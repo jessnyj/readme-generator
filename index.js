@@ -4,3 +4,15 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+const promptUser = () => {
+    return inquirer.prompt([
+        {
+            type: 'input',
+            name: 'username'
+            message: 'What is your Github username?',
+        },
+        {
+
+        },
+    ]);
+};
