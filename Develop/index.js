@@ -1,9 +1,9 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
+// const util = require('util');
 
-const writeFileAsync = util.promisify(fs.writeFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 // Create an array of questions for user input
 const promptUser = () => {
@@ -29,7 +29,7 @@ const promptUser = () => {
             message: 'Please write a short description of your project.',
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
             choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
@@ -56,15 +56,6 @@ const promptUser = () => {
         },
     ])
     .then(answers => {
-        // username,
-        // email,
-        // title,
-        // description,
-        // license,
-        // installation,
-        // tests,
-        // usage,
-        // contributions,
         console.log(answers);
 
     // Readme Development/Template
@@ -94,25 +85,19 @@ const promptUser = () => {
         *Email: ${answers.email}
         `)
         console.log(readmeTemp);
-        fs.writeFile();
+
+        // Function to write README file  
+        fs.writeFile('generateREADME.md', readmeTemp, (err) => 
+        (err) ? console.error(err) : console.log()
+
+        );
     });
 };
-
-// Function to write README file  
-    fs.writeFile('generateREADME.md', answers, (err) => 
-    (err) ? console.error(err) : console.log()
-  
-
-    );
-
-
 
 // Create a function to initialize app
 async function init() {
     try {
         const answers = await promptUser();
-        
-        // writeFileAsync()
 
     } catch (err) {
         console.log(err);
