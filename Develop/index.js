@@ -62,6 +62,16 @@ const promptUser = () => {
     const readmeTemp = (`
         # ${answers.title}
 
+        ## Table of Contents
+        *[Title](#title)
+        *[Description](#description)
+        *[Installation](#installation)
+        *[Usage](#usage)
+        *[License](#license)
+        *[Contributing](#contributions)
+        *[Tests](#tests)
+        *[Questions](#questions)
+
         ## Description
         ${answers.description}
 
@@ -80,7 +90,7 @@ const promptUser = () => {
         ## Tests
         ${answers.tests}
 
-        ## Questions? 
+        ## Questions 
         *Github: ${answers.username}
         *Email: ${answers.email}
         `)
@@ -88,7 +98,7 @@ const promptUser = () => {
 
         // Function to write README file  
         fs.writeFile('generateREADME.md', readmeTemp, (err) => 
-        (err) ? console.error(err) : console.log()
+        (err) ? console.error(err) : console.log('Success!')
 
         );
     });
