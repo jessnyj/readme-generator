@@ -55,17 +55,19 @@ const promptUser = () => {
             message: 'What does the user need to know about contributing to the repo?',
         },
     ]).then({
-      username,
-      email,
-      title,
-      description,
-      license,
-      installation,
-      tests,
-      usage,
-      contributions,
-    }) => {
-        const readmeTemp = (`
+        username,
+        email,
+        title,
+        description,
+        license,
+        installation,
+        tests,
+        usage,
+        contributions,
+    }); => {
+
+    // Readme Development/Template
+    const readmeTemp = (`
         # ${title}
 
         ## Description
@@ -89,40 +91,30 @@ const promptUser = () => {
         ## Contact 
         *Github: ${username}
         *Email: ${email}
-        
         `)
-    }
-    
-    
-    
-    
-
+}
 };
 
+// Function to write README file  
+    fs.writeFile('generateREADME.md', answers, (err) => 
+    (err) ? console.error(err) : console.log()
+  
+
+    );
 
 
-
-
-    // Create a function to write README file
-
-//     fs.writeFile('generateREADME.md', answers, (err) => {
-//     if (err)
-//         console.log(err);
-//     else {`
-
-
-//    `}
-
-
-// });
 
 // Create a function to initialize app
 async function init() => {
     try {
+        const answers = await promptUser();
+        
+        writeFileAsync()
 
-
+    } catch (err) {
+        console.log(err);
     }
-}
+};
 
 // Function call to initialize app
 init();
