@@ -80,7 +80,7 @@ const promptUser = () => {
         ## Tests
         ${answers.tests}
 
-        ## Contact 
+        ## Questions? 
         *Github: ${answers.username}
         *Email: ${answers.email}
         `)
