@@ -4,6 +4,7 @@ const fs = require('fs');
 const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
+
 // Create an array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
@@ -19,12 +20,12 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'project name',
-            message: 'What is your projects name?',
+            name: 'title',
+            message: 'What is the title of your project?',
         },
         {
             type: 'input',
-            name: 'project description',
+            name: 'description',
             message: 'Please write a short description of your project.',
         },
         {
@@ -45,25 +46,56 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'user knowledge',
+            name: 'knowledge',
             message: 'What does the user need to know about using the repo?',
         },
         {
             type: 'input',
-            name: 'dependencies',
+            name: 'contributions',
             message: 'What does the user need to know about contributing to the repo?',
         },
-    ])
+    ]).then({
+      username,
+      email,
+      title,
+      description,
+      license,
+      dependencies,
+      tests,
+      knowledge,
+      contributions,
+    })
+    
+    
+    
+    
 
-// TODO: Create a function to write README file
-.then(writeToFile = (fileName, data) => (`
+};
 
 
-`)
 
-)};
-// TODO: Create a function to initialize app
-function init() {}
+
+
+    // Create a function to write README file
+    
+//     fs.writeFile('generateREADME.md', answers, (err) => {
+//     if (err)
+//         console.log(err);
+//     else {`
+
+
+//    `}
+
+
+// });
+
+// Create a function to initialize app
+async function init() => {
+    try {
+
+
+    }
+}
 
 // Function call to initialize app
 init();
