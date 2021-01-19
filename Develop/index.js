@@ -36,7 +36,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'dependencies',
+            name: 'installation',
             message: 'What command should be run to install dependencies?',
         },
         {
@@ -46,7 +46,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: 'knowledge',
+            name: 'usage',
             message: 'What does the user need to know about using the repo?',
         },
         {
@@ -60,11 +60,38 @@ const promptUser = () => {
       title,
       description,
       license,
-      dependencies,
+      installation,
       tests,
-      knowledge,
+      usage,
       contributions,
-    })
+    }) => {
+        const readmeTemp = (`
+        # ${title}
+
+        ## Description
+        ${description}
+
+        ## Installation
+        ${installation}
+
+        ## Usage
+        ${usage}
+
+        ## License
+        ${license}
+
+        ## Contributing
+        ${contributing}
+
+        ## Tests
+        ${tests}
+
+        ## Contact 
+        *Github: ${username}
+        *Email: ${email}
+        
+        `)
+    }
     
     
     
@@ -77,7 +104,7 @@ const promptUser = () => {
 
 
     // Create a function to write README file
-    
+
 //     fs.writeFile('generateREADME.md', answers, (err) => {
 //     if (err)
 //         console.log(err);
