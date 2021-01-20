@@ -62,13 +62,16 @@ const promptUser = () => {
     const readmeTemp = (`
         # ${answers.title}
 
+        ![License](https://img.shields.io/badge/license-${answers.license}-181717?style=for-the-badge) 
+
+
         ## Table of Contents
         *[Title](#title)
         *[Description](#description)
         *[Installation](#installation)
         *[Usage](#usage)
         *[License](#license)
-        *[Contributing](#contributions)
+        *[Contributing](#contributing)
         *[Tests](#tests)
         *[Questions](#questions)
 
@@ -82,7 +85,7 @@ const promptUser = () => {
         ${answers.usage}
 
         ## License
-        ${answers.license}
+        This project is covered under ${answers.license}
 
         ## Contributing
         ${answers.contributions}
@@ -103,6 +106,7 @@ const promptUser = () => {
         );
     });
 };
+
 
 // Create a function to initialize app
 async function init() {

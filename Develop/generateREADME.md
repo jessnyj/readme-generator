@@ -1,5 +1,8 @@
 
-        # g
+        # readme
+
+        ![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
+
 
         ## Table of Contents
         *[Title](#title)
@@ -7,29 +10,29 @@
         *[Installation](#installation)
         *[Usage](#usage)
         *[License](#license)
-        *[Contributing](#contributions)
+        *[Contributing](#contributing)
         *[Tests](#tests)
         *[Questions](#questions)
 
         ## Description
-        e
+        readme
 
         ## Installation
-        e
+        install
 
         ## Usage
-        g
+        java
 
         ## License
-        MIT
+        This project is covered under MIT
 
         ## Contributing
-        d
+        java
 
         ## Tests
-        r
+        jest
 
         ## Questions 
-        *Github: i
-        *Email: d
+        *Github: jessny
+        *Email: jessnyjoseph @gmail
         
