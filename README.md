@@ -53,6 +53,7 @@ This project is covered under MIT.
 
 ## Authors
 **UC Berkeley Coding Bootcamp**
+
 **Jessny Joseph** 
 
 ## Questions 
