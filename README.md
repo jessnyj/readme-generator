@@ -9,10 +9,8 @@
 * [Description](#description)
 * [Work Involved](#work-involved)
 * [Code Snippet](#code-snippet)
-* [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
 * [Authors](#authors)
 * [Questions](#questions)
 * [Acknowledgments](#acknowledgments)
@@ -46,25 +44,22 @@ const promptUser = () => {
 ```
 
 
-## Installation
-
-
 ## Usage
-
+![How to use](./Develop/readme-use.png)
 
 ## License
 This project is covered under MIT.
-
-## Contributing
 
 
 ## Authors
 **UC Berkeley Coding Bootcamp**
 **Jessny Joseph** 
 
+
 ## Questions 
 * [Github](https://github.com/jessnyj)
 * [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
+
 
 ## Acknowledgments
 Trilogy Education Services

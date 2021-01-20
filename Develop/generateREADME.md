@@ -1,38 +1,37 @@
 
-        # readme
+# readme-generator
 
-        ![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
+![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
 
+## Table of Contents
+* [Title](#title)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-        ## Table of Contents
-        *[Title](#title)
-        *[Description](#description)
-        *[Installation](#installation)
-        *[Usage](#usage)
-        *[License](#license)
-        *[Contributing](#contributing)
-        *[Tests](#tests)
-        *[Questions](#questions)
+## Description
+This application allows a user to generate a README.md file by answering a few questions.
 
-        ## Description
-        readme
+## Installation
+npm install
 
-        ## Installation
-        install
+## Usage
+Javascript
 
-        ## Usage
-        java
+## License
+This project is covered under MIT
 
-        ## License
-        This project is covered under MIT
+## Contributing
+Javascript
 
-        ## Contributing
-        java
+## Tests
+n/a
 
-        ## Tests
-        jest
-
-        ## Questions 
-        *Github: jessny
-        *Email: jessnyjoseph @gmail
+## Questions 
+* Github: jessnyj
+* Email: jessnyjoseph@gmail.com
         
