@@ -2,13 +2,12 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) { 
     if (license !== 'NONE') {
+      return " ";
     } else {
       return ${answers.license}
     }
 
 };
-
-
 
 
 // TODO: Create a function that returns the license link

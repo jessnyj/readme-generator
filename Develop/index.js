@@ -58,47 +58,55 @@ const promptUser = () => {
     .then(answers => {
         console.log(answers);
 
-    // Readme Development/Template
+// Readme Development/Template
     const readmeTemp = (`
-        # ${answers.title}
+# ${answers.title}
 
-        ![License](https://img.shields.io/badge/license-${answers.license}-181717?style=for-the-badge) 
+![License](https://img.shields.io/badge/license-${answers.license}-181717?style=for-the-badge) 
 
+## Table of Contents
+* [Title](#title)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-        ## Table of Contents
-        *[Title](#title)
-        *[Description](#description)
-        *[Installation](#installation)
-        *[Usage](#usage)
-        *[License](#license)
-        *[Contributing](#contributing)
-        *[Tests](#tests)
-        *[Questions](#questions)
+## Description
+${answers.description}
 
-        ## Description
-        ${answers.description}
+## Installation
+${answers.installation}
 
-        ## Installation
-        ${answers.installation}
+## Usage
+${answers.usage}
 
-        ## Usage
-        ${answers.usage}
+## License
+This project is covered under ${answers.license}
 
-        ## License
-        This project is covered under ${answers.license}
+## Contributing
+${answers.contributions}
 
-        ## Contributing
-        ${answers.contributions}
+## Tests
+${answers.tests}
 
-        ## Tests
-        ${answers.tests}
-
-        ## Questions 
-        *Github: ${answers.username}
-        *Email: ${answers.email}
+## Questions 
+* Github: ${answers.username}
+* Email: ${answers.email}
         `)
         console.log(readmeTemp);
 
+        // function renderLicenseBadge(license) { 
+        //     if (license !== 'NONE') {
+        //       return " ";
+        //     } else {
+        //       return ${answers.license}
+        //     }
+        
+        // };
+        
         // Function to write README file  
         fs.writeFile('generateREADME.md', readmeTemp, (err) => 
         (err) ? console.error(err) : console.log('Success!')
@@ -107,6 +115,7 @@ const promptUser = () => {
     });
 };
 
+// module.exports = readmeTemp;
 
 // Create a function to initialize app
 async function init() {
