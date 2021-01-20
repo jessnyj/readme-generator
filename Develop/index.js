@@ -1,9 +1,6 @@
 // Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const util = require('util');
-
-// const writeFileAsync = util.promisify(fs.writeFile);
 
 // Create an array of questions for user input
 const promptUser = () => {
@@ -32,7 +29,7 @@ const promptUser = () => {
             type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
-            choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+            choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3'],
         },
         {
             type: 'input',
@@ -55,11 +52,11 @@ const promptUser = () => {
             message: 'What does the user need to know about contributing to the repo?',
         },
     ])
-    .then(answers => {
-        console.log(answers);
+        .then(answers => {
+            console.log(answers);
 
-// Readme Development/Template
-    const readmeTemp = (`
+            // Readme Development/Template
+            const readmeTemp = (`
 # ${answers.title}
 
 ![License](https://img.shields.io/badge/license-${answers.license}-181717?style=for-the-badge) 
@@ -94,30 +91,21 @@ ${answers.tests}
 
 ## Questions 
 * Github: ${answers.username}
-* Email: ${answers.email}
-        `)
-        console.log(readmeTemp);
+* Email: ${answers.email} 
+    `)
+            console.log(readmeTemp);
 
-        // function renderLicenseBadge(license) { 
-        //     if (license !== 'NONE') {
-        //       return " ";
-        //     } else {
-        //       return ${answers.license}
-        //     }
-        
-        // };
-        
-        // Function to write README file  
-        fs.writeFile('generateREADME.md', readmeTemp, (err) => 
-        (err) ? console.error(err) : console.log('Success!')
+         // Function to write README file  
+            fs.writeFile('generateREADME.md', readmeTemp, (err) =>
+                (err) ? console.error(err) : console.log('Success!')
 
-        );
-    });
-};
+            );
+        });
 
-// module.exports = readmeTemp;
+    };
 
-// Create a function to initialize app
+
+// Function to initialize app
 async function init() {
     try {
         const answers = await promptUser();

@@ -16,6 +16,8 @@
 * [Acknowledgments](#acknowledgments)
 
 ## Demo
+![Demo](https://drive.google.com/file/d/1NSjNwed3eKTkmpb16hU43h0_cjOKE2Or/view)
+
 
 ## Technologies Used
 * javascript
@@ -43,23 +45,19 @@ const promptUser = () => {
         },
 ```
 
-
 ## Usage
 ![How to use](./Develop/readme-use.png)
 
 ## License
 This project is covered under MIT.
 
-
 ## Authors
 **UC Berkeley Coding Bootcamp**
 **Jessny Joseph** 
 
-
 ## Questions 
 * [Github](https://github.com/jessnyj)
 * [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
-
 
 ## Acknowledgments
 Trilogy Education Services
