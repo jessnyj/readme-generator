@@ -16,8 +16,8 @@
 * [Acknowledgments](#acknowledgments)
 
 ## Demo
-![Demo](https://drive.google.com/file/d/1NSjNwed3eKTkmpb16hU43h0_cjOKE2Or/view)
-
+Please check out a demo of this application here.
+[Demo](https://drive.google.com/file/d/1NSjNwed3eKTkmpb16hU43h0_cjOKE2Or/view)
 
 ## Technologies Used
 * javascript
