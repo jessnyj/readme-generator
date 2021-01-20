@@ -44,6 +44,25 @@ const promptUser = () => {
             message: 'What is your email address?',
         },
 ```
+```
+## Description
+${answers.description}
+
+## Installation
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+This project is covered under ${answers.license}
+```
+```
+    fs.writeFile('generateREADME.md', readmeTemp, (err) =>
+         (err) ? console.error(err) : console.log('Success!')
+
+    );
+```
 
 ## Usage
 ![How to use](./Develop/readme-use.png)
