@@ -3,25 +3,21 @@
 ![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
 
 ## Table of Contents
-* [Title](#title)
-* [Demo](#demo)
-* [Technologies Used](#technologies-used)
-* [Description](#description)
-* [Work Involved](#work-involved)
-* [Code Snippet](#code-snippet)
-* [Usage](#usage)
-* [License](#license)
-* [Authors](#authors)
-* [Questions](#questions)
-* [Acknowledgments](#acknowledgments)
+||||
+|:-:|:-:|:-:|
+|[Table Contents](#table-of-contents)|[Demo](#demo)|[Technologies Used](#technologies-used)
+|[Description](#description)|[Work Involved](#work-involved)|[Code Snippet](#code-snippet)
+|[Usage](#usage)|[Authors](#authors)|[Acknowledgments](#acknowledgments)
 
 ## Demo
 Please check out a demo of this application here.
 [Demo](https://drive.google.com/file/d/1NSjNwed3eKTkmpb16hU43h0_cjOKE2Or/view)
 
 ## Technologies Used
-* javascript
-* NodeJS
+|||||
+|:-:|:-:|:-:|:-:|
+|Javascript		|inquirer	
+|NodeJS	|Github
 
 ## Description
 This command-line application allows a user to dynamically generate a README.md file by answering a few questions. Within the professional READ.md file, the sections include the title, description, table of contents, installation, usage, license, contributing, tests, and questions.
@@ -30,6 +26,7 @@ This command-line application allows a user to dynamically generate a README.md 
 For this application, it was necessary to install inquirer. I developed a list of prompt questions for the user to answer, in which I added those answers to a README template so that the desired file could be generated. 
 
 ## Code Snippet
+* This code snippet highlights how inquirer is used in order to display a prompt for the user to fill out, and how the file is written.
 ```
 const promptUser = () => {
     return inquirer.prompt([
@@ -75,9 +72,7 @@ This project is covered under MIT.
 
 **Jessny Joseph** 
 
-## Questions 
-* [Github](https://github.com/jessnyj)
-* [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
+[Github](https://github.com/jessnyj) | [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
 
 ## Acknowledgments
-Trilogy Education Services
+I would like to thank the mentors and colleagues who helped inspire and improve upon this project.

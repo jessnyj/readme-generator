@@ -95,21 +95,18 @@ ${answers.tests}
     `)
             console.log(readmeTemp);
 
-         // Function to write README file  
+            // Function to write README file  
             fs.writeFile('generateREADME.md', readmeTemp, (err) =>
                 (err) ? console.error(err) : console.log('Success!')
 
             );
         });
-
-    };
-
+};
 
 // Function to initialize app
 async function init() {
     try {
         const answers = await promptUser();
-
     } catch (err) {
         console.log(err);
     }
